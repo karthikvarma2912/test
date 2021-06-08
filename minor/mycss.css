@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box; /* this model does not add the padding measurements to the total size of your box*/
+    transition: all ease-in-out 250ms;
+    
+}
+    body {
+    font-family: 'Comic Sans MS', Comic Sans, cursive;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.233);
+}
+.images{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 5px solid rgb(0, 255, 221);
+    margin-left: 7px; margin-right: 7px;
+}
+
+.home-hero{
+  padding: 145px 10px 140px 10px;
+  background: rgb(0, 0, 0);
+  margin-top: 5px;
+  border: 5px solid rgb(0, 255, 221);
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+}
+.home-about-textbox{
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 10px;
+    border: 5px solid rgb(0, 255, 221);
+    border-radius: 10px;
+    position: relative;
+    }
+h2{
+    border: 5px solid rgb(0, 255, 221);
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+     
+     
+    .port-item{
+    margin: 30px;
+    position: relative;
+     
+    }
+     
+    .port-item img{
+    display:block;
+    border: 5px solid rgb(0, 255, 221);
+    border-radius: 10px;
+    }
+     
+    .port-description {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgba(0,0,0,.6);
+    padding-bottom: 2em;
+     
+    }
+     
+    .port-description p {
+    margin: 1em;
+    }
+     
+    @media (min-width: 37rem) {
+    .port-item{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    }
+    }
+     
+    @media (min-width: 60rem) {
+    .port-item img{
+    width: 100%; /*added this to solve a bug on 1920 * 1080 monitors
+    remove and view to see bug */
+    }
+     
+    .port-item{
+    width: 27%;
+    height: auto;
+    float: left;
+     
+    }
+    .port-description {
+    transform: translateY(150%);
+    }
+     
+    .port-item:hover .port-description{
+    transform: translateY(0%);
+    }
+    .port-item:focus-within .port-description {
+    transform: translateY(0%);}
+    }
+ 
